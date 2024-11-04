@@ -102,7 +102,7 @@ function nextPrompt() {
 
 // Display the end message based on score
 function displayEndMessage() {
-  const resultMessage = score >= 8
+  const resultMessage = score >= 12
     ? "Great job! You made effective choices and successfully navigated the sales conversation."
     : "The conversation could have gone better. Try again to improve your sales approach!";
   document.getElementById("prompt").textContent = resultMessage;
