@@ -142,3 +142,63 @@ footer p {
   font-size: 0.9em;
   color: #777;
 }
+
+/* Styles for circular button */
+#open-roleplay {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #D4AF37; /* Gold */
+  color: #fff;
+  font-size: 24px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#open-roleplay:hover {
+  background-color: #C4963E;
+}
+
+/* Modal styling */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 5% auto;
+  width: 90%;
+  max-width: 600px;
+  position: relative;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #777;
+}
