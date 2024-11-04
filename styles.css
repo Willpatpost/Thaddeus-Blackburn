@@ -1,99 +1,76 @@
-/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    background-color: #f3f2ef;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f9;
+  color: #333;
+  padding: 20px;
 }
 
 header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #5a3a1e;
-    color: #ffd700;
-    padding: 20px;
-    text-align: center;
-}
-
-.profile-pic {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    margin-bottom: 10px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 header h1 {
-    margin: 0;
+  font-size: 2.5em;
+  color: #533D1D; /* Brown */
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-nav ul li a {
-    color: #ffd700;
-    text-decoration: none;
+header p {
+  font-size: 1.2em;
+  color: #D4AF37; /* Gold */
 }
 
 section {
-    padding: 40px;
-    margin: 0 auto;
-    max-width: 800px;
+  margin-bottom: 40px;
 }
 
-h2 {
-    color: #5a3a1e; /* Brown */
+section h2 {
+  color: #D4AF37; /* Gold */
+  border-bottom: 2px solid #533D1D; /* Brown */
+  padding-bottom: 5px;
+  margin-bottom: 20px;
 }
 
-#portfolio .project {
-    background-color: #f9f5f1;
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin-bottom: 20px;
+ul {
+  list-style-type: none;
 }
 
-#contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+li {
+  margin-bottom: 10px;
 }
 
-#contact-form input, #contact-form textarea, #contact-form button {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+a {
+  color: #D4AF37; /* Gold */
+  text-decoration: none;
 }
 
-#contact-form button {
-    background-color: #5a3a1e;
-    color: #ffd700;
-    cursor: pointer;
-    border: none;
-    font-weight: bold;
+a:hover {
+  text-decoration: underline;
 }
 
-#contact-form button:hover {
-    background-color: #4e3217;
+.gallery {
+  display: flex;
+  gap: 10px;
+}
+
+.gallery img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 2px solid #533D1D;
+  border-radius: 5px;
 }
 
 footer {
-    background-color: #5a3a1e;
-    color: #ffd700;
-    text-align: center;
-    padding: 20px;
-    font-size: 0.9em;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #777;
 }
-
-.profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%; /* Makes the picture circular */
-    margin: 20px 0;
-}
-
