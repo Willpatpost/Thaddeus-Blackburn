@@ -150,9 +150,10 @@ footer p {
   right: 20px;
   background-color: #D4AF37; /* Gold */
   color: #fff;
-  font-size: 24px;
-  width: 60px;
-  height: 60px;
+  font-size: 18px;
+  font-weight: bold;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   border: none;
   cursor: pointer;
@@ -160,6 +161,7 @@ footer p {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 #open-roleplay:hover {
