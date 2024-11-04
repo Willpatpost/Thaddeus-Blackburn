@@ -54,8 +54,8 @@
     </ul>
   </section>
 
-    <!-- 
-    <section id="gallery">
+  <!-- Uncomment to add photos
+  <section id="gallery">
     <h2>Photos</h2>
     <div class="gallery">
       <img src="photo1.jpg" alt="Thaddeus Blackburn photo 1">
@@ -72,6 +72,22 @@
       <li>Email: <a href="mailto:tblackb1@uwyo.edu">tblackb1@uwyo.edu</a></li>
       <li>LinkedIn: <a href="https://www.linkedin.com/in/thaddeus-blackburn-ab47a8292/" target="_blank">Thaddeus Blackburn</a></li>
     </ul>
+  </section>
+
+  <!-- New Interactive Sales Roleplay Section -->
+  <section id="roleplay-game">
+    <h2>B2B Sales Roleplay Simulation</h2>
+    <p>Take on the role of a sales representative and navigate a sales conversation by selecting responses that best address the buyer's needs.</p>
+
+    <div id="game-container">
+      <p id="prompt">Welcome! Click "Start" to begin the roleplay.</p>
+      <div id="options">
+        <button onclick="selectOption(0)">Option 1</button>
+        <button onclick="selectOption(1)">Option 2</button>
+      </div>
+      <p id="score">Score: 0</p>
+      <button id="next-button" onclick="nextPrompt()" disabled>Next</button>
+    </div>
   </section>
 
   <footer>
