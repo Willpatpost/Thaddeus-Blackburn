@@ -64,9 +64,18 @@ const prompts = [
 let currentPromptIndex = 0;
 let score = 0;
 
+// Function to shuffle choices for each prompt
+function shuffleChoices(choices) {
+  for (let i = choices.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [choices[i], choices[j]] = [choices[j], choices[i]];
+  }
+}
+
 // Display the first prompt
 function displayPrompt() {
   const currentPrompt = prompts[currentPromptIndex];
+  shuffleChoices(currentPrompt.choices); // Shuffle choices before displaying
   document.getElementById("prompt").textContent = currentPrompt.prompt;
   document.getElementById("options").children[0].textContent = currentPrompt.choices[0].text;
   document.getElementById("options").children[1].textContent = currentPrompt.choices[1].text;
