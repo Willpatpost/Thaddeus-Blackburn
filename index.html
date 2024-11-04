@@ -54,16 +54,6 @@
     </ul>
   </section>
 
-  <!-- Uncomment to add photos
-  <section id="gallery">
-    <h2>Photos</h2>
-    <div class="gallery">
-      <img src="photo1.jpg" alt="Thaddeus Blackburn photo 1">
-      <img src="photo2.jpg" alt="Thaddeus Blackburn photo 2">
-      <img src="photo3.jpg" alt="Thaddeus Blackburn photo 3">
-    </div>
-  </section> -->
-
   <section id="contact">
     <h2>Contact</h2>
     <p>Feel free to reach out via:</p>
@@ -74,25 +64,30 @@
     </ul>
   </section>
 
-  <!-- New Interactive Sales Roleplay Section -->
-  <section id="roleplay-game">
-    <h2>B2B Sales Roleplay Simulation</h2>
-    <p>Take on the role of a sales representative and navigate a sales conversation by selecting responses that best address the buyer's needs.</p>
-
-    <div id="game-container">
-      <p id="prompt">Welcome! Click "Start" to begin the roleplay.</p>
-      <div id="options">
-        <button onclick="selectOption(0)">Option 1</button>
-        <button onclick="selectOption(1)">Option 2</button>
-      </div>
-      <p id="score">Score: 0</p>
-      <button id="next-button" onclick="nextPrompt()" disabled>Next</button>
-    </div>
-  </section>
-
   <footer>
     <p>&copy; 2024 Thaddeus Blackburn</p>
   </footer>
+
+  <!-- Circular Button to Open Roleplay Game -->
+  <button id="open-roleplay" onclick="openRoleplay()">?</button>
+
+  <!-- Popup Modal for Roleplay Game -->
+  <div id="roleplay-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeRoleplay()">&times;</span>
+      <h2>B2B Sales Roleplay Simulation</h2>
+      <p>Take on the role of a sales representative and navigate a sales conversation by selecting responses that best address the buyer's needs.</p>
+      <div id="game-container">
+        <p id="prompt">Welcome! Click "Start" to begin the roleplay.</p>
+        <div id="options">
+          <button onclick="selectOption(0)">Option 1</button>
+          <button onclick="selectOption(1)">Option 2</button>
+        </div>
+        <p id="score">Score: 0</p>
+        <button id="next-button" onclick="nextPrompt()" disabled>Next</button>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
